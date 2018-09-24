@@ -17,6 +17,9 @@ namespace PCars2UdpNet.Structs
     [StructLayout(LayoutKind.Sequential, Pack = 1)]
     public struct sTelemetryData : IPCars2Packet
     {
+        /// <summary>
+        /// Base packet data.
+        /// </summary>
         public PacketBase sBase;
 
         /// <summary>

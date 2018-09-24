@@ -66,8 +66,10 @@ namespace PCars2UdpNet.Structs
         /// </summary>
         public uint TickCount;
 
+        /// <inheritdoc/>
         public PacketBase Base => this.sBase;
 
+        /// <inheritdoc/>
         public EPacketType PacketType => (EPacketType)this.sBase.mPacketType;
     }
 }

@@ -7,13 +7,13 @@
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 // </copyright>
 
-using System;
-using System.Collections.Generic;
-using System.Runtime.InteropServices;
-using System.Text;
-
 namespace PCars2UdpNet.Structs
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Runtime.InteropServices;
+    using System.Text;
+
     [StructLayout(LayoutKind.Sequential, Pack = 1)]
     public struct sRaceData : IPCars2Packet
     {
@@ -106,8 +106,10 @@ namespace PCars2UdpNet.Structs
         /// </summary>
         public byte Padding;
 
+        /// <inheritdoc/>
         public PacketBase Base => this.sBase;
 
+        /// <inheritdoc/>
         public EPacketType PacketType => (EPacketType)this.sBase.mPacketType;
     }
 }

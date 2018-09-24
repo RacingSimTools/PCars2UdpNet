@@ -6,6 +6,7 @@
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>bin\Debug\netstandard2.0\PCars2UdpNet.xml</DocumentationFile>
+    <CodeAnalysisRuleSet>PCars2UdpNet.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
 
   <ItemGroup>
@@ -19,4 +20,7 @@
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
   </ItemGroup>
 
+   <ItemGroup>
+    <None Include="PCars2UdpNet.ruleset" />
+  </ItemGroup>
 </Project>

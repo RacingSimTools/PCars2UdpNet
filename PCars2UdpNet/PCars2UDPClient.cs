@@ -104,6 +104,7 @@ namespace PCars2UdpNet
             return str;
         }
 
+        /// <inheritdoc/>
         public void Dispose()
         {
             this.udpClient.Close();
